@@ -24,7 +24,10 @@ export default function Home() {
         .order('created_at', { ascending: false });
 
       if (fetchError) {
-        setError(fetchError.message);
+        const message = fetchError.message.includes('Failed to fetch')
+          ? 'No se pudo conectar con Supabase. Revisa las variables de entorno del deploy.'
+          : fetchError.message;
+        setError(message);
       } else {
         setTareas(data || []);
         setError('');
