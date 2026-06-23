@@ -5,3 +5,5 @@ next-dev.log
 next-dev.err.log
 .playwright-mcp/
 gestor-tareas-css-*.png
+
+.vercel

@@ -8,7 +8,7 @@ El objetivo del proyecto es demostrar un CRUD completo conectado a una base de d
 
 ## Demo
 
-Deploy: [URL de Vercel aqui]
+Deploy: https://buscar-trabajo.vercel.app
 
 Repositorio: https://github.com/kali10-cell/Prueba-01-CRUD-b-sico
 
