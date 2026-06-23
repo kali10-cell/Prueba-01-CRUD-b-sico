@@ -1,7 +1,7 @@
 {
-  "name": "Recetas Offline",
-  "short_name": "Recetas",
-  "description": "PWA de recetas con datos de Supabase disponibles offline tras visitarlas.",
+  "name": "Gestor de tareas",
+  "short_name": "Tareas",
+  "description": "CRUD basico de tareas con Next.js y Supabase.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
@@ -22,4 +22,3 @@
     }
   ]
 }
-

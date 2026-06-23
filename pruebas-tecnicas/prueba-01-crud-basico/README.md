@@ -98,7 +98,7 @@ No implemente autenticacion porque el enunciado indica que no es necesaria. Si e
 
 ## Que use de IA y para que
 
-Use IA como apoyo para revisar el flujo del ejercicio, detectar que la app anterior apuntaba a `recetas` en vez de `tareas`, corregir la configuracion de variables de entorno y preparar la defensa tecnica del proyecto.
+Use IA como apoyo para revisar el flujo del ejercicio, corregir la configuracion de variables de entorno y preparar la defensa tecnica del proyecto.
 
 Tambien la use para validar errores de Supabase durante el desarrollo, especialmente el problema de permisos sobre la tabla `tareas`.
 
