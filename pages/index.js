@@ -17,16 +17,20 @@ export default function Home() {
       return;
     }
 
-    const { data, error: fetchError } = await supabase
-      .from('tareas')
-      .select('*')
-      .order('created_at', { ascending: false });
+    try {
+      const { data, error: fetchError } = await supabase
+        .from('tareas')
+        .select('*')
+        .order('created_at', { ascending: false });
 
-    if (fetchError) {
-      setError(fetchError.message);
-    } else {
-      setTareas(data || []);
-      setError('');
+      if (fetchError) {
+        setError(fetchError.message);
+      } else {
+        setTareas(data || []);
+        setError('');
+      }
+    } catch {
+      setError('No se pudo conectar con Supabase. Revisa las variables de entorno del deploy.');
     }
 
     setLoading(false);
